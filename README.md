@@ -35,8 +35,7 @@ The **Student Homework System** is a web-based task management platform designed
 - Wish/task list system for student motivation
 - Teacher grading and feedback system
 - Parent-teacher-student coordination in one platform
-- Authentication (Login/Register)
-- Responsive UI for desktop and mobile
+- Responsive UI for desktop
 
 ---
 
