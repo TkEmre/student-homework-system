@@ -1,53 +1,70 @@
-# 🏡 Student Homework System
+# 🏫 Student Homework System
 
-This project is a web-based platform that allows students to manage and submit their homework, while teachers can create assignments, grade submissions, and track student progress.
+The **Student Homework System** is a web-based task management platform designed to improve collaboration between students, teachers, and parents. It allows tasks (e.g., homework, projects, assignments, wishes) to be created, managed, and completed by different roles with specific permissions.
 
 ---
 
-## 🚀 Features
+## 👤 User Roles & Features
 
-- 🧑‍🎓 Student and 🧑‍🏫 Teacher roles
-- Students can:
-  - View assigned homework
-  - Submit homework
-  - See their grades and feedback
-- Teachers can:
-  - Create and manage homework assignments
-  - View student submissions
-  - Assign grades and comments
-- Authentication system (Register/Login)
-- Organized dashboard for both roles
+### 🧑‍🎓 Student
+- View tasks assigned by teachers or parents
+- Submit answers to homework
+- Add personal tasks/wishes to their dashboard
+- Track progress and deadlines
+- View grades and feedback from teachers
+
+### 🧑‍🏫 Teacher
+- Create and assign tasks to students
+- Review and grade student submissions
+- Edit or remove tasks
+- Collaborate with parents on student progress
+
+### 👨‍👩‍👧 Parent
+- Create tasks or reminders for their children (e.g., “Practice piano”, “Prepare for exam”)
+- View their child's submitted tasks and results
+- Communicate with teachers via task comments
+- Help track their child’s academic development
+
+---
+
+## 🚀 Key Features
+
+- Role-based access system (Student, Teacher, Parent)
+- Task assignment system with due dates, statuses, and descriptions
+- Homework submission portal for students
+- Wish/task list system for student motivation
+- Teacher grading and feedback system
+- Parent-teacher-student coordination in one platform
+- Authentication (Login/Register)
+- Responsive UI for desktop and mobile
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Python + Django *(or Flask / specify your stack)*
-- **Frontend:** HTML/CSS/JS *(or React/Vue if used)*
-- **Database:** SQLite *(or PostgreSQL/MySQL)*
-- **Other Tools:** Django Admin, Bootstrap *(update as needed)*
+- **Backend:** Python + Django  
+- **Frontend:** HTML, CSS, JavaScript (optionally Bootstrap)  
+- **Database:** SQLite (can be switched to PostgreSQL or MySQL)  
+- **Auth:** Django built-in authentication system
 
 ---
 
-## ⚙️ Installation
+## 📦 Installation Guide
 
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/TkEmre/student-homework-system.git
 cd student-homework-system
 
-# 2. Create and activate a virtual environment
+# Create a virtual environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Run migrations
+# Run migrations
 python manage.py migrate
 
-# 5. (Optional) Load sample data
-python manage.py loaddata sample_data.json
-
-# 6. Start the server
+# Start the server
 python manage.py runserver
