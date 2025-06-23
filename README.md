@@ -40,31 +40,24 @@ The **Student Homework System** is a web-based task management platform designed
 
 ---
 
+---
+
 ## 🛠️ Tech Stack
 
-- **Backend:** Python + Django  
-- **Frontend:** HTML, CSS, JavaScript (optionally Bootstrap)  
-- **Database:** SQLite (can be switched to PostgreSQL or MySQL)  
-- **Auth:** Django built-in authentication system
+- **Language:** Java  
+- **Architecture:** Object-Oriented Programming (OOP)  
+- **Libraries/Frameworks:** Java SE (Standard Edition)  
+- **Build Tool:** No external build tool used (pure Java classes)  
+- **IDE:** Recommended: IntelliJ IDEA / Eclipse / NetBeans  
+- **Data Storage:** In-memory data structures (e.g., ArrayList)
 
 ---
 
-## 📦 Installation Guide
 
+## 📦 How to Run the Project
+
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/TkEmre/student-homework-system.git
 cd student-homework-system
 
-# Create a virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run migrations
-python manage.py migrate
-
-# Start the server
-python manage.py runserver
